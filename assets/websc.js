@@ -8,7 +8,7 @@ const puppeteer = require('puppeteer');
     await page.goto(url);
 
     const titlesAndLinks = await page.evaluate(() => {
-        const adverts = Array.from(document.querySelectorAll('.advert-title a'));
+        const adverts = Array.from(document.querySelectorAll('a'));
         return adverts.map(advert => {
             return {
                 title: advert.textContent,
