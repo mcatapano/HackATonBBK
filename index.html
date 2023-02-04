@@ -196,6 +196,50 @@
         </div>
 
         <div class="row">
+          <div class="col-8" id="searchControls">
+            <div class="input-group">
+              <div class="btn-group">
+                <select class="selectpicker show-tick" data-live-search="true" data-style="btn-success"
+                        id="makes" data-header="Select Make">
+                </select>
+              </div>
+              <div class="btn-group">
+                <select class="selectpicker show-tick" data-style="btn-success" id="modelsPicker"
+                        data-header="Select Model">
+                </select>
+              </div>
+              <input id="searchTextField" type="text" placeholder="Enter location" size="50">
+              <div class="btn-group">
+                <select class="selectpicker show-tick" data-style="btn-success" id="filterPicker"
+                        data-header="Sort by">
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="head_title text-right" id="searchCounter" hidden></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 wow fadeInLeft" id="searchResults"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-5" id="searchLoading">
+            <button class="btn btn-success" disabled>
+              <span class="fa fa-refresh spinning"></span>
+              Loading..
+            </button>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-4 col-md-offset-4" id="page-selection"></div>
+        </div>
+
+      </div>
+      </div><!--End off row -->
+
+
+        <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
@@ -227,7 +271,6 @@
               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
           </div>
-
         </div>
 
       </div>
